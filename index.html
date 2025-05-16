@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+
 </head>
 <body>
-    <h1>Cart Page</h1>
+  <div class="container">
+      <div class="header">
+        <span>YAY! It's BOGO</span>
+      </div>
+
+    <form class="form">
+      <div class="offer-box">
+        <label class="radio-row">
+          <input type="radio" name="unit" value="1" class="unit-radio">
+          <div class="radio-info">
+            <div class="row-top">
+                <div>
+                    <strong>1 Unit</strong>
+                    <span class="badge">10% Off</span>
+                </div>
+              <div class="price">
+                  <span class="price-inline">$10.00 USD</span>
+                  <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+            <div class="subtext">Standard Price</div>
+          </div>
+        </label>
+        <div class="unit-options">
+            <div class="item-option">
+                <div class="option-header">
+                    <span>Size</span>
+                    <span>Colour</span>
+                </div>
+            <label>#1</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+          <div class="item-option">
+            <label>#2</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-box most-popular">
+        <div class="ribbon">MOST POPULAR</div>
+        <label class="radio-row">
+          <input type="radio" name="unit" value="2" class="unit-radio" checked>
+          <div class="radio-info">
+            <div class="row-top">
+                <div>
+                    <strong>2 Unit</strong>
+                    <span class="badge">20% Off</span>
+                </div>
+              <div class="price">
+                  <span class="price-inline">$18.00 USD</span>
+                  <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div class="unit-options">
+          <div class="item-option">
+            <div class="option-header">
+                    <span>Size</span>
+                    <span>Colour</span>
+                </div>
+            <label>#1</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+          <div class="item-option">
+            <label>#2</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-box">
+        <label class="radio-row">
+          <input type="radio" name="unit" value="3" class="unit-radio">
+          <div class="radio-info">
+            <div class="row-top">
+                <div>
+                    <strong>3 Unit</strong>
+                    <span class="badge">30% Off</span>
+                </div>
+              <div class="price">
+                  <span class="price-inline">$24.00 USD</span>
+                  <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div class="unit-options">
+          <div class="item-option">
+            <div class="option-header">
+                    <span>Size</span>
+                    <span>Colour</span>
+                </div>
+            <label>#1</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+          <div class="item-option">
+            <label>#2</label>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="delivery">Free Delivery</div>
+        <div class="total">Total : $<span id="totalAmount">10.00</span> USD</div>
+      </div>
+
+      <button type="submit" class="add-to-cart">+ Add to Cart</button>
+    </form>
+
+    
+  </div>
 </body>
 </html>
